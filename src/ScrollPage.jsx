@@ -33,15 +33,15 @@ export default function ScrollPage() {
 
         <section className="relative z-10 bg-gradient-to-b from-blue-50 via-white to-white pb-10 md:pb-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-100 text-teal-700 rounded-full text-sm font-semibold mb-6">
-              <CheckCircle size={16} />
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-100 text-teal-700 rounded-full text-xl font-semibold mb-6">
+              <CheckCircle size={18} />
               <span>What We Offer</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-extrabold text-blue-900 mb-6 text-balance bg-gradient-to-r from-blue-900 via-teal-700 to-blue-900 bg-clip-text text-transparent">
+            <h1 className="text-3xl md:text-7xl font-extrabold text-blue-900 mb-6 text-balance bg-gradient-to-r from-blue-900 via-teal-700 to-blue-900 bg-clip-text text-transparent">
               Our Specialized Services
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Comprehensive support for children with neuro-developmental disorders. We offer specialized therapies, education, and rehabilitation services designed to help each child achieve their full potential.
+              Our specialized services provide comprehensive support for childrens with neuro-developmental disorders. We offer specialized therapies, education, and rehabilitation services designed to help each child achieve their full potential.
             </p>
             <div className="mt-8 flex justify-center gap-2">
               <div className="w-2 h-2 bg-teal-500 rounded-full animate-pulse"></div>
@@ -153,7 +153,7 @@ export default function ScrollPage() {
                 </div>
               </div>
               <div className="order-1 lg:order-2">
-                <p className="text-sm font-semibold text-teal-600 uppercase tracking-widest mb-2">SKILL DEVELOPMENT</p>
+                {/* <p className="text-sm font-semibold text-teal-600 uppercase tracking-widest mb-2">SKILL DEVELOPMENT</p> */}
                 <h2 className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-6">REHABILITATION SERVICES</h2>
                 <p className="text-gray-600 text-lg leading-relaxed mb-8">
                   Comprehensive rehabilitation support focused on developing independence, communication skills, and life functioning abilities.
@@ -165,8 +165,6 @@ export default function ScrollPage() {
                     'Physiotherapy - Mobility and strength development',
                     'Behavioral Therapy - Adaptive skills development',
                     'Remedial Therapy - Academic support',
-                    'Art & Craft - Creative expression',
-                    'Recreational Activities - Holistic development',
                   ].map((service, idx) => (
                     <div key={idx} className="flex items-start gap-3">
                       <CheckCircle size={20} className="text-teal-500 flex-shrink-0 mt-1" />
@@ -317,7 +315,7 @@ export default function ScrollPage() {
               <div className="text-center p-8 bg-white shadow-xl rounded-2xl border-t-4 border-blue-400 transform hover:shadow-2xl transition duration-300">
                 <Phone size={36} className="text-blue-600 mx-auto mb-3" />
                 <h3 className="text-xl font-bold text-blue-900 mb-3">Phone</h3>
-                <p className="text-gray-600 text-base">+91 9951427524</p>
+                <p className="text-gray-600 text-base">+91 9676825576</p>
                 <p className="text-gray-600 text-base">+91 9390211804</p>
               </div>
               <div className="text-center p-8 bg-white shadow-xl rounded-2xl border-t-4 border-teal-400 transform hover:shadow-2xl transition duration-300">

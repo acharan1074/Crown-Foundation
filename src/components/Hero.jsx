@@ -55,8 +55,8 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-20 items-center">
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-teal-100 text-teal-700 rounded-full text-sm font-semibold">
-              <Sparkles size={16} />
+            <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-teal-100 text-teal-700 rounded-full text-xl font-semibold">
+              <Sparkles size={18} />
               <span>CROWN N BLOOM CENTER</span>
             </div>
 
@@ -126,7 +126,7 @@ export default function Hero() {
                 <div className="relative z-10">
                   <Icon size={36} className="mb-4 group-hover:scale-110 transition" />
                   <h3 className="text-xl md:text-2xl font-bold mb-2 group-hover:text-yellow-200">{box.title}</h3>
-                  <p className="text-sm md:text-base font-semibold text-gray-100 group-hover:text-yellow-100 leading-relaxed">
+                  <p className="text-xl md:text-2xl font-semibold text-gray-100 group-hover:text-yellow-100 leading-relaxed">
                     {box.subtitle}
                   </p>
                 </div>

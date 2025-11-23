@@ -24,7 +24,7 @@ export default function Navbar() {
               height={52}
               className="rounded-full shadow-sm group-hover:shadow-md transition object-cover"
             />
-            <span className="hidden sm:inline text-xl font-extrabold text-blue-900 tracking-wide">
+            <span className="text-xl font-extrabold text-blue-900 tracking-wide">
               CROWN FOUNDATION
             </span>
           </button>
