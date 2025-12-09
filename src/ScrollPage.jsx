@@ -18,6 +18,46 @@ export default function ScrollPage() {
   // Appointment form moved into `src/components/AppointmentForm.jsx`.
   // The form state and handlers live inside that component to keep this page file tidy.
 
+  const governingBody = [
+    { name: 'Rachamalla Sathaiah', role: 'President', credentials: 'B.Sc' },
+    { name: 'Payyavula Veeraswamy', role: 'Vice President', credentials: 'M.A, B.Ed' },
+    { name: 'Rachamalla Sunitha', role: 'General Secretary', credentials: 'Business' },
+    { name: 'Rachamalla Ravinder', role: 'Joint Secretary', credentials: 'B.A' },
+    { name: 'Ashwala Shiva Kumar', role: 'Treasurer', credentials: 'M.Sc (OU)' },
+    { name: 'Venu Kumar Dabbathula', role: 'Executive Member', credentials: 'M.Sc' },
+  ];
+
+  const professionalTeam = [
+    {
+      name: 'Dr. Raghuram Bandi',
+      role: 'Physiotherapist',
+      credentials: 'BPT (L-53986); Early Intervention (PGDEI), Pre CRR 2505301671',
+    },
+    {
+      name: 'Dr. D. Harinath Reddy',
+      role: 'Physiotherapist',
+      credentials: 'BPT; Fellowship at Yashoda Hospital (Hitech City); Musculoskeletal (Ortho & Sports) conditions',
+    },
+    {
+      name: 'Ramya Sree Singireddy',
+      role: 'Psychologist',
+      credentials: 'M.Sc Psychology; Diploma in School Counselling; Diploma in Child Counselling & Parenting Coaching',
+    },
+    {
+      name: 'Sandhya Rani Velkurthi',
+      role: 'Special Educator',
+      credentials: '15 years experience',
+    },
+  ];
+
+  const advisors = [
+    // {
+    //   name: 'Advisory Board',
+    //   role: 'Advisors',
+    //   credentials: 'Experienced professionals in healthcare and rehabilitation',
+    // },
+  ];
+
   return (
     <main className="w-full min-h-screen bg-white font-sans overflow-x-hidden max-w-full pt-20">
       <Navbar />
@@ -241,24 +281,24 @@ export default function ScrollPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
               {[
                 {
-                  role: 'Governing Body',
-                  members: 'President, Vice President, Secretary, Treasurer',
+                  title: 'Governing Body',
+                  members: governingBody,
                   icon: Users,
                   bgColor: 'from-teal-50 to-teal-100',
                   borderColor: 'border-teal-400',
                   iconBg: 'bg-teal-500',
                 },
                 {
-                  role: 'Professional Team',
-                  members: 'Special Educators, Occupational Therapists, Speech Therapists, Physiotherapists',
+                  title: 'Professional Team',
+                  members: professionalTeam,
                   icon: Briefcase,
                   bgColor: 'from-blue-50 to-blue-100',
                   borderColor: 'border-blue-400',
                   iconBg: 'bg-blue-500',
                 },
                 {
-                  role: 'Advisors',
-                  members: 'Experienced professionals in healthcare and rehabilitation',
+                  title: 'Advisors',
+                  members: advisors,
                   icon: BookOpen,
                   bgColor: 'from-yellow-50 to-yellow-100',
                   borderColor: 'border-yellow-400',
@@ -276,8 +316,16 @@ export default function ScrollPage() {
                       <div className={`w-16 h-16 ${team.iconBg} rounded-2xl flex items-center justify-center mb-4 transform group-hover:rotate-6 group-hover:scale-110 transition-all duration-300 shadow-lg`}>
                         <IconComponent size={32} className="text-white" />
                       </div>
-                      <h3 className="text-2xl font-bold text-blue-900 mb-3">{team.role}</h3>
-                      <p className="text-gray-700 leading-relaxed">{team.members}</p>
+                      <h3 className="text-2xl font-bold text-blue-900 mb-4">{team.title}</h3>
+                      <div className="space-y-3">
+                        {team.members.map((member, idx) => (
+                          <div key={idx} className="text-left bg-white/70 rounded-2xl p-3 border border-white/40 shadow-sm">
+                            <div className="text-lg font-semibold text-blue-900">{member.name}</div>
+                            <div className="text-sm font-medium text-teal-700">{member.role}</div>
+                            <div className="text-sm text-gray-700 leading-relaxed">{member.credentials}</div>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 );
@@ -315,7 +363,7 @@ export default function ScrollPage() {
               <div className="text-center p-8 bg-white shadow-xl rounded-2xl border-t-4 border-blue-400 transform hover:shadow-2xl transition duration-300">
                 <Phone size={36} className="text-blue-600 mx-auto mb-3" />
                 <h3 className="text-xl font-bold text-blue-900 mb-3">Phone</h3>
-                <p className="text-gray-600 text-base">+91 9676825576</p>
+                <p className="text-gray-600 text-base">+91 9951427524</p>
                 <p className="text-gray-600 text-base">+91 9390211804</p>
               </div>
               <div className="text-center p-8 bg-white shadow-xl rounded-2xl border-t-4 border-teal-400 transform hover:shadow-2xl transition duration-300">
